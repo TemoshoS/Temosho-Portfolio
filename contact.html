@@ -31,24 +31,28 @@
 <br>
  <!--Contact details-->
 <h1>Contact us</h1>
-<form >
+<form
+  action="https://formspree.io/f/xqknqbyv"
+  method="POST"
+>
 
-    <label>Name and Surname: </label></br>
-    <input type="text" size="50" placeholder="enter your email"></br>
+<label>Name and Surname * </label></br>
+    <input type="text" name="text" size="50" required></br>
 
-    <label>Email address: </label></br>
-    <input type="email"  size="50" placeholder="enter your email"></br>
+<label>Email * </label></br>
+    <input type="email" name="email" size="50" required></br>
 
+    <label>Phone Number * </label></br>
+    <input type="number" name="number"  required></br>
 
-     <label>Tel: </label><br>
-     <input type="text"  size="50" placeholder="enter your cell phone number"></br>
+    <label>Date * </label></br>
+    <input type="date" name="date"  required></br>
 
+  <label> Your message * </label></br>
+    <textarea name="message" size="50" required style="width: 339px;height: 100px;"></textarea></br>
 
-    <label>Message</label><br>
-    <textarea style="width: 400px;height: 100px;">enter your message</textarea></br>
-
-    <input type="submit" value="Submit">
-
+  
+  <button type="submit">Send</button>
 </form>
 
 
